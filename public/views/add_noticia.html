@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Agregar Noticia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<form action="/noticia/add_noticia" method="post" enctype="multipart/form-data">
+    <div class="col-lg-12 col-md-12">
+        <div class="panel panel-primary">
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                    <label for="encabezado">Titulo: </label>
+                    <input class="form-control"  id="encabezado" type="text" name="encabezado" required="required">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <label for="entrada">Entrada: </label>
+                    <input class="form-control"  id="entrada" type="text" name="entrada"  required="required">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <label for="cuerpo">Cuerpo: </label>
+                        <textarea id="cuerpo" name="cuerpo" rows="14" class="form-control"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <label >Categoria: </label>
+                        <select name="categoria"  class="form-control" required="required">
+                            <option value="Nacionales">Nacionales</option>
+                            <option value="Internacionales">Internacionales</option>
+                            <option value="Espectaculos">Espectaculos</option>
+                            <option value="Deportes">Deportes</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <label >Periodista: </label>
+                        <select name="periodista"  class="form-control" required="required">
+                            <option value="Redaccion Teleprensa">Redacccion Teleprensa</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <label for="remate">Remate: </label>
+                    <input class="form-control" id="remate" type="text" name="remate"  required="required">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <label for="url_video">URL video: </label>
+                    <input class="form-control" id="url_video" type="text" name="url_video"  required="required">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <label for="imagen">Imagen: </label>
+                        <input class="form-control" id="imagen" type="file" name="imagen"  accept="image/png"required="required">
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 12px">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                    <input class="btn btn-success" type="submit" value="Guardar">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</form>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "news33",
+  "description": "API que permitira la interaccion con aplicacion movil",
+  "main": "index.js",
+  "authors": [
+    "Igmer Rodriguez"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "wysihtml": "^0.5.5"
+  }
+}
